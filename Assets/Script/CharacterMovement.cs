@@ -8,10 +8,11 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField] GameObject canBeSeenText, canBackStabText;
     [SerializeField] private bool canStab, stabing;
-    [SerializeField] private float speed = 5f, stabDistance;
+    [SerializeField] private float speed = 5f;
     [SerializeField] private float rotationSpeed = 15f;
     [SerializeField] Animator animator;
     private GameObject theEnemy;
+    private float stabDistance;
 
     private void Awake()
     {
