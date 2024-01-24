@@ -40,6 +40,11 @@ public class EnemyScript : MonoBehaviour
                 }
             }
         }
+
+        if(life <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public bool Vision()
