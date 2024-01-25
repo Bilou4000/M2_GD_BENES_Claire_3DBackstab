@@ -21,10 +21,8 @@ public class EnemyScript : MonoBehaviour
         {
             if(Distance < maxVisionDistance)
             {
-                //NOT WORKING
                 if (!Physics.Raycast(transform.position, directionToTarget, Distance, obstructionMask))
                 {
-                    Debug.Log("Can see player");
                     canBeSeen = true;
                 }
                 else
