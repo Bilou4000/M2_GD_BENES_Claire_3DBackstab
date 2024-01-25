@@ -27,6 +27,10 @@ public class EnemyScript : MonoBehaviour
                     Debug.Log("Can see player");
                     canBeSeen = true;
                 }
+                else
+                {
+                    canBeSeen = false;
+                }
             }
             else
             {
